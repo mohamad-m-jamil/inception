@@ -11,7 +11,7 @@ COPY conf/default.conf /etc/nginx/sites-available/default
 
 # Configure the final image (SSL setup, expose port, start server)
 RUN openssl req -x509 -nodes -days 365 \
-    -subj "/C=LB/ST=Beirut/L=Beirut/O=42/OU=Student/CN=ksayour.42.fr" \
+    -subj "/C=LB/ST=Beirut/L=Beirut/O=42/OU=Student/CN=mjamil.42.fr" \
     -newkey rsa:2048 \
     -keyout /etc/ssl/private/nginx-selfsigned.key \
     -out /etc/ssl/certs/nginx-selfsigned.crt
